@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='css/register.css'>
+    <link rel='stylesheet' href='css/input.css'>
+    <link rel='stylesheet' href='css/header.css'>
+    <link rel='stylesheet' href='css/footer.css'>
+    <title>Rentailer - RentCarForm </title>
+</head>
+<body>
+        <nav>
+            <img src="images/logo/writiclelogo.PNG" alt="Car Rental">
+            <div class="tabList">
+                <div class="leftTabs">
+        
+                    <a  href='rentailernav.html'>Home</a>
+                    <a  href='AddCar'>Add Car</a>
+                    <a  href='ViewCars'>View Car</a>
+                    <a class='active' href='RentCar'>Rent Car</a>
+                    <a href='ViewRentedCars'>View Rented Car</a>
+                    <a href='ReturnCar'>Return Car</a>
+                
+                </div>
+                <div class="rightTabs">
+                
+                    <a href="Logout">Logout</a>
+                    <!-- <a href="login.html"><div class="profile">J B</div></a> -->
+                
+                </div>
+            </div>
+        </nav>
+        <div id="container">
+            <img src="images/logo/writiclelogo.PNG" alt="Writicle Logo">
+            <h1>Rent a Car</h1>
+            <div id="tableBorder">
+                <form method="post" action="RentCar" id="signupForm" onsubmit="return registerForm()">
+                    <span id="formError"></span>
+                    <table>
+                        <tr>
+                            <th><label for="fname" id="fnamelabel">Car No : </label></th>
+                            <td><input type="text" name="carno" id="fname" onblur="fnameVal()" /><span id="fnameError"></span></td>
+                        </tr>
+                        <tr>
+                            <th><label for="lname" id="lnamelabel">User id: </label></th>
+                            <td><input type="text" name="userid" id="lname" onblur="lnameVal()" /><span id="lnameError"></span></td>
+                        </tr>
+                        <tr>
+                            <th><label for="email" id="emaillabel">Username </label></th>
+                            <td><input type="text" name="username" id="email"  /><span id="emailError"></span></td>
+                        </tr>
+                        <tr>
+                            <th><label for="phoneno" id="phonelabel">User Mobile : </label></th>
+                            <td><input type="text" name="usermobile" id="phoneno" onblur="phoneVal()" /><span id="phoneError"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit" id="subButton" >Issue Car</button></td>
+                            <!-- <td colspan="2"><input type="submit" Value="Register" id="subButton"></td> -->
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>

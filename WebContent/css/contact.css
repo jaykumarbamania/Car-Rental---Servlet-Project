@@ -1,0 +1,137 @@
+h1{
+    font-size: 3.5vw;
+}
+
+.contactContainer{
+    display: flex;
+}
+
+.leftSide{
+    width: 40%;
+    height: 100%;
+    padding: 100px;
+}
+
+.leftContent{
+    margin: 0 20px;
+    width: 80%;
+    padding: 10px 40px;
+    background-color:rgb(107, 55, 131) ;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.leftContent:hover{
+    background-color:rgb(141, 78, 170) ;
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 5px 10px #ccc;
+}
+
+.leftContent > h1{
+    font-size: 4vw;
+}
+
+.contactText{
+    color: rgb(248, 248, 248);
+    font-size: 2vw;
+}
+
+.rightSide{
+    width: 70%;
+    height: 100%;
+    padding: 100px 100px;
+    background-color: white;
+}
+
+.logoDiv{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.logoDiv > img{
+    
+    width: 200px;
+}
+
+.rightSide > p{
+    color: gray;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 100%;
+}
+
+
+#subButton {
+    position: relative;
+    text-align: center;
+    border: none;
+    background-color: #f5d20dda;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+#subButton:hover {
+    background-color: gold;
+  }
+
+input, textarea{
+    width: 50%;
+}
+
+@media screen and (max-width: 1364px) {
+    .leftSide {
+      width: 30%;
+      padding: 1;
+    }
+    .leftContent{
+        margin: 0;
+        width: 80%;
+        font-size: 1vw;
+    }
+    .contactText{
+      font-size: 2vw;
+    }
+    .rightSide{
+        width: 70%;
+      padding:20px;
+    }
+    input,textarea{
+        width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 787px) {
+      .contactContainer{
+          flex-direction: column-reverse;
+          justify-content: center;
+      }
+    .leftSide {
+    text-align: center;
+      width: 100%;
+      padding: 20px;
+    }
+    .leftContent{
+        text-align: center;
+        margin: 0;
+        width: 50%;
+        font-size: 1vw;
+    }
+    .contactText{
+      font-size: 2vw;
+    }
+    .rightSide{
+        margin:0;
+        width: 90%;
+      padding:20px;
+    }
+    input,textarea{
+        width: 80%;
+    }
+    #subButton{
+        display: flex;
+        justify-self: center;
+    }
+  }

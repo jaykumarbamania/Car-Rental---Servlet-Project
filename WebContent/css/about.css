@@ -1,0 +1,23 @@
+.aboutContainer{
+    min-height: 90vh;
+    padding: 10vh 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutContainer > img{
+    height: 100px;
+    width: 400px;
+    margin-bottom: 10vh;
+}
+
+.aboutText{
+    border: 2px solid #6b3783;
+    padding: 10vh 3vw;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 162, 218);
+    color: #6b3783;
+}

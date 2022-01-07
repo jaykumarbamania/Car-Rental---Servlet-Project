@@ -1,0 +1,24 @@
+
+        <img src="images/logo/writiclelogo.PNG" alt="Car Rental">
+        <h1>Now, Sign In</h1>
+        <p>Don't have an account? <a href="UserRegisteration" class="link">Sign Up</a> </p>
+        <div id="tableBorder">
+            <form  method="post" action="Login">
+                <p id="formError"></p>
+                <table>
+                    <tr>
+                        <th><label for="loginemail" id="loginemaillabel">Email </label></th>
+                        <td><input type="text" name="loginemail" id="loginemail" onblur="loginemailVal()" /><span id="loginemailError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="lpassword" id="lpasslabel">Password : </label></th>
+                        <td><input type="password" name="lpassword" id="lpassword"  onblur="lpassVal()"/><span id="lpassError"></span></td>
+                    </tr>
+                    <tr>
+                        <!-- <td colspan="2"><input type="submit" Value="Login" id="subButton"></td> -->
+                        <td colspan="2"><button type="submit" id="subButton">Login</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>

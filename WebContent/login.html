@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Login - Rental Central</title>
+</head>
+<body>
+<!-- 
+	Three types of Users:
+		Admin : Add User(Rentailer or Normal), View Users,Add Car, View Cars 
+		Car Rentailer : Add Car , View Cars, Rent a Car, View Rented Cars, Return Cars
+		Normal User : View Rentailers, View Cars
+		
+		 -->
+    <nav>
+        <img src="images/logo/writiclelogo.PNG" alt="Car Rental">
+        <div class="tabList">
+            <div class="leftTabs">
+ 
+            </div>
+            <div class="rightTabs">
+               
+                <a class="active" href="Login">Login</a>
+                <a href="UserRegisteration" >Register</a>
+            
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <img src="images/logo/writiclelogo.PNG" alt="Car Rental">
+        <h1>Sign In</h1>
+        <p>Don't have an account? <a href="UserRegisteration" class="link">Sign Up</a> </p>
+        <div id="tableBorder">
+            <form   method="post" action="Login">
+                <figcaption id="formError"></figcaption>
+                <table>
+                    <tr>
+                        <th><label for="loginemail" id="loginemaillabel">Email </label></th>
+                        <td><input type="text" name="loginemail" id="loginemail" onblur="loginemailVal()" /><span id="loginemailError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="lpassword" id="lpasslabel">Password : </label></th>
+                        <td><input type="password" name="lpassword" id="lpassword"  onblur="lpassVal()"/><span id="lpassError"></span></td>
+                    </tr>
+                    <tr>
+                        <!-- <td colspan="2"><input type="submit" Value="Login" id="subButton"></td> -->
+                        <td colspan="2"><button type="submit" id="subButton">Login</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="secondary-content">
+                <div class="writicle">
+                    <h3>Car Rental</h3>
+                </div>
+                <div class="about">
+                    <h3>About</h3> 
+                </div>
+                <div class="contact">
+                    <h3>Contact</h3>
+                </div>
+            </div>
+            <p>Created by @JayBamania 2021</p> 
+            
+             </div>
+    </footer>
+
+    <script src="js/FormValidation.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+    <img src="images/logo/writiclelogo.PNG" alt="Car Rental">
+    <h1>Sign Up</h1>
+    <p>Already have an account? <a href="Login" class="link">Sign In</a></p>
+    <div id="tableBorder">
+        <form method="post" action="UserRegisteration" id="signupForm" onsubmit="return registerForm()">
+            <span id="formError"></span>
+            <table>
+                <tr>
+                    <th><label for="name" id="namelabel">Name : </label></th>
+                    <td><input type="text" name="name" id="name" onblur="nameVal()" /><span id="nameError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="username" id="usernamelabel">Last Name : </label></th>
+                    <td><input type="text" name="name" id="username" onblur="usernameVal()" /><span id="usernameError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="email" id="emaillabel">Email </label></th>
+                    <td><input type="email" name="email" id="email" onblur="emailVal()" /><span id="emailError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="phoneno" id="phonelabel">Phone No. : </label></th>
+                    <td><input type="text" name="mobile" id="phoneno" onblur="phoneVal()" /><span id="phoneError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="password" id="passlabel">Password : </label></th>
+                    <td><input type="password" name="password" id="password"  onblur="passVal()"/><span id="passError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="cpassword" id="cpasslabel">Confirm Password : </label></th>
+                    <td><input type="password" name="password" id="cpassword" onblur="cpassVal()"/><span id="cpassError"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" id="subButton" >Register</button></td>
+                    <!-- <td colspan="2"><input type="submit" Value="Register" id="subButton"></td> -->
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

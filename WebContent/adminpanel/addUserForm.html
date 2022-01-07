@@ -1,0 +1,45 @@
+
+    <div id="tableBorder">
+            <form method="post" action="UserRegisteration" id="signupForm" onsubmit="return registerForm()">
+                <table>
+                    <tr>
+                        <th><label for="fname" id="fnamelabel">Name : </label></th>
+                        <td><input type="text" name="name" id="fname"/><span id="fnameError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="lname" id="lnamelabel">Username: </label></th>
+                        <td><input type="text" name="username" id="lname" onblur="lnameVal()" /><span id="lnameError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email" id="emaillabel">Email </label></th>
+                        <td><input type="email" name="email" id="email" onblur="emailVal()" /><span id="emailError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="phoneno" id="phonelabel">Phone No. : </label></th>
+                        <td><input type="text" name="mobile" id="phoneno" onblur="phoneVal()" /><span id="phoneError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="password" id="passlabel">Password : </label></th>
+                        <td><input type="password" name="password" id="password"  onblur="passVal()"/><span id="passError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="cpassword" id="cpasslabel">Confirm Password : </label></th>
+                        <td><input type="password" name="password" id="cpassword" onblur="cpassVal()"/><span id="cpassError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="cpassword" id="select">User Type </label></th>
+                        <td>
+                        	<select name="user_type">
+                        		<option>Rentailer</option>
+                        		<option>Normal</option>
+                        	</select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" id="subButton" >Register</button></td>
+                        <!-- <td colspan="2"><input type="submit" Value="Register" id="subButton"></td> -->
+                    </tr>
+                </table>
+            </form>
+    </div>
+</div>

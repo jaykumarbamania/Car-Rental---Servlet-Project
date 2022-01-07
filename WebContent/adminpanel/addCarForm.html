@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin - Add Car</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel='stylesheet' href='css/input.css'>
+<link rel="stylesheet" href="css/feedstyle.css">
+<link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="js/jquery-3.6.0.min.js">
+</head>
+<body>
+<nav>
+    <img src="images/logo/writiclelogo.PNG" alt="Car Rental">
+    <div class="tabList">
+        <div class="leftTabs">
+        
+          		<a  href="Admin">Home</a>
+                <a  href="UserRegisteration">Add User</a>
+                <a  href="ViewUsers">View Users</a>
+                <a class="active" href="AddCar">Add Car</a>
+                <a href="ViewCars">ViewCar</a>
+        
+        </div>
+        <div class="rightTabs">
+        
+            <a href="login.html">Logout</a>
+            <!-- <a href="login.html"><div class="profile">J B</div></a> -->
+        
+        </div>
+    </div>
+</nav>
+<div id="container">
+    <h2>Add Car</h2>
+    <div id="tableBorder">
+        <form method="post" action="AddCar" id="signupForm" onsubmit="return registerForm()">
+            <span id="formError"></span>
+            <table>
+                <tr>
+                    <th><label for="name" id="namelabel">Car No : </label></th>
+                    <td><input type="text" name="carno" id="name"  /><span id="nameError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="username" id="usernamelabel">Car Name : </label></th>
+                    <td><input type="text" name="carname" id="username"  /><span id="usernameError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="email" id="emaillabel">Car Maker </label></th>
+                    <td><input type="text" name="carmaker" id="email"  /><span id="emailError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="phoneno" id="phonelabel">Car Model : </label></th>
+                    <td><input type="text" name="carmodel" id="phoneno"  /><span id="phoneError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="cpassword" id="cpasslabel">Car Color : </label></th>
+                    <td><input type="text" name="carcolor" id="cpassword" /><span id="cpassError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="password" id="passlabel">Available Cars : </label></th>
+                    <td><input type="number" min="0" name="availability" id="password"  /><span id="passError"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" id="subButton" >Register</button></td>
+                    <!-- <td colspan="2"><input type="submit" Value="Register" id="subButton"></td> -->
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

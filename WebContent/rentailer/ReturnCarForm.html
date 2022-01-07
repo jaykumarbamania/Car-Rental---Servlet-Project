@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Return Car</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel='stylesheet' href='css/input.css'>
+<link rel="stylesheet" href="css/feedstyle.css">
+<link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="js/jquery-3.6.0.min.js">
+</head>
+<body>
+<nav>
+    <img src="images/logo/writiclelogo.PNG" alt="Car Rental">
+    <div class="tabList">
+        <div class="leftTabs">
+        
+            <a  href='Rentailer'>Home</a>
+            <a  href='AddCar'>Add Car</a>
+            <a href='ViewCars'>View Car</a>
+            <a href='RentCar'>Rent Car</a>
+            <a href='ViewRentedCars'>View Rent Car</a>
+            <a class='active' href='ReturnCar'>Return Car</a>
+        
+        </div>
+        <div class="rightTabs">
+        
+            <a href="Logout">Logout</a>
+            <!-- <a href="login.html"><div class="profile">J B</div></a> -->
+        
+        </div>
+    </div>
+</nav>
+<div id="container">
+    <h2>Return Car</h2>
+    <div id="tableBorder">
+        <form method="post" action="ReturnCar" id="signupForm" onsubmit="return registerForm()">
+            <span id="formError"></span>
+            <table>
+                <tr>
+                    <th><label for="name" id="namelabel">Car No : </label></th>
+                    <td><input type="text" name="carno" id="name" onblur="nameVal()" /><span id="nameError"></span></td>
+                </tr>
+                <tr>
+                    <th><label for="username" id="usernamelabel">Username : </label></th>
+                    <td><input type="text" name="username" id="username" onblur="usernameVal()" /><span id="usernameError"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" id="subButton" >RETURN</button></td>
+                    <!-- <td colspan="2"><input type="submit" Value="Register" id="subButton"></td> -->
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
